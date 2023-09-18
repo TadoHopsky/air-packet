@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #262c27;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.conteiner {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(../images/moust1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 80px;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/header-decore.svg);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  transform: translateY(35%);
+  z-index: 2;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/header-decore.svg);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 450px;
+  background-size: cover;
+  z-index: 3;
+  background-position: center;
+  transform: translateY(75%) rotate(180deg);
+}
+.header__top {
+  display: flex;
+  align-items: center;
+  padding: 57px 0;
+  gap: 100px;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.logo path {
+  transition: fill 0.9s ease;
+}
+.logo:hover path {
+  fill: #0093a1;
+  transition: fill 0.3s ease;
+}
+.header__btn {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+
+  font-style: normal;
+
+  line-height: normal;
+  padding: 12px 71px;
+  background-color: #262c27;
+  border: none;
+  cursor: pointer;
+}
+/* header content */
+.header__content {
+  min-height: calc(100vh - 161px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.header__content-box {
+  min-width: 550px;
+  text-align: center;
+  margin-right: 30px;
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+}
+.header__decore-text {
+  position: absolute;
+  bottom: 25px;
+  color: #0093a1;
+}
+
+.header-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 64px;
+  line-height: 71px;
+}
+.header-text {
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.header__decore-text-1 {
+  z-index: 1;
+  right: 145px;
+  bottom: 130px;
+}
+.header__decore-text-1,
+.header__decore-text-2 {
+  line-height: 145px;
+  font-weight: 400;
+  font-size: 130px;
+  opacity: 0.5;
+}
+.header__decore-text-2 {
+  z-index: 4;
+  left: 265px;
+}
+.header__decore-text-3 {
+  min-width: 360px;
+  z-index: 4;
+  text-align: center;
+  right: 110px;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* main section */
+
+.info {
+  background-image: url(../images/info-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-top: 90px;
+}
+.info::before {
+  content: "";
+  position: absolute;
+  height: 130px;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #262c27;
+  transform: translateY(-120px);
+  z-index: 1;
+}
+.info__top {
+  display: flex;
+  gap: 80px;
+  padding-top: 100px;
+  margin-bottom: 65vh;
+}
+.info__top-text {
+  padding-top: 245px;
+  width: 290px;
+  color: #fff;
+  position: relative;
+}
+.info__top-png {
+  position: relative;
+  z-index: 5;
+}
+.popup-btn {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.popup-btn:hover path{
+  fill: #b9c400;
+  transition: 0.3s;
+}
+.popup-btn:hover circle{
+    stroke: #b9c400;
+    transition: 0.3s linear;
+  }
+.popup-btn span {
+  padding-top: 12px;
+  display: block;
+  color: #fff;
+}
+.info__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.info__top-text-two {
+  border-bottom: 1px solid #fff;
+}
+.info__top-text-one {
+  padding-bottom: 125px;
+}
+.info__specs {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+  color: #fff;
+  padding-bottom: 50px;
+}
+.info__specs-title {
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 67px;
+  font-family: "Comfortaa", cursive;
+  width: 250px;
+}
+.info__specs-list {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 30px 0;
+  width: 565px;
+  font-weight: 700;
+}
+.info__specs-item {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 25px;
+}
+.info__specs-caption {
+  width: 185px;
+}
